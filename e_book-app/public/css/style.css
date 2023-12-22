@@ -1,0 +1,318 @@
+
+
+
+
+
+/* Styles pour les icones */
+.fa-heart{
+  color: red;
+ 
+}
+.icon_es {
+  color: rgb(255, 187, 0);
+}
+
+.icon-e {
+  color: rgb(255, 68, 0);
+  height: 66px;
+}
+
+/* Styles pour la barre de navigation */
+.navbara {
+  margin-bottom: 3px;
+  padding: 10px;
+  background-color: #b2cdca;
+}
+
+
+/* Styles pour la barre de recherche */
+
+.d-flex {
+  margin-right: 70px;
+}
+
+.search {
+  width: 10vw;
+  height: 40px;
+  border-radius: 10px;
+  border: 3px solid blue;
+}
+
+/* Styles pour la barre le logo */
+
+.image1 {
+  height: 90px;
+  width: 90px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10%;
+
+}
+
+/* Styles pour la barre le logo */
+a {
+  font-size: 13px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(94, 14, 14);
+}
+
+a:hover {
+  background-color: #b2e8ed;
+}
+a.active {
+  background-color: #2f9d94; /* Couleur lorsque actif */
+}
+
+li:hover {
+  color: aqua;
+}
+
+/* Styles pour la barre le slide */
+
+.carousel-item img {
+  margin-top: 95px;
+  width: 100%;
+  height: 425px;
+  object-fit: cover;
+  /* Empêche la déformation tout en couvrant toute la surface disponible */
+  object-position: center;
+  /* Centre l'image horizontalement et verticalement */
+  background-color: #f0f0f0;
+  /* Couleur de fond pour les espaces vides autour de l'image */
+}
+
+/* Styles pour la barre l'icone suivant, precedent */
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 8 8'%3e%3cpath d='M4 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
+}
+
+
+/* Styles du preloader */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #bf1515;
+  z-index: 9999;
+  /* Assure que le preloader est au-dessus du reste du contenu */
+}
+
+.spinner {
+  border: 4px solid #f3f3f3;
+  /* Couleur de la bordure */
+  border-top: 4px solid #3498db;
+  /* Couleur de la bordure supérieure (peut être différente pour un effet de rotation) */
+  border-radius: 50%;
+  /* Forme du spinner */
+  width: 50px;
+  /* Largeur */
+  height: 50px;
+  /* Hauteur */
+  animation: spin 2s linear infinite;
+  /* Animation de rotation */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+
+
+/* Styles du de formulaire d'inscription */
+
+h1 {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 22px;
+  color: #3c3c3c;
+  
+}
+
+.ins {
+  padding: 7px;
+  font-size: 24px;
+}
+
+.entrer {
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 450px;
+}
+
+.envoyer {
+  width: 450px;
+  height: 28px;
+  padding: 5px;
+  margin-left: 5px;
+  font-size: 12px;
+
+}
+
+.confidentiel {
+  font-size: 12px;
+  margin-top: 20px;
+  margin-left: 5px;
+
+}
+
+.confidentiel:hover {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+  text-overflow: clip;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+fieldset {
+  border: 3px solid rgba(0, 0, 0, 0.2); /* Une bordure noire avec une opacité de 20% */
+  border-radius: 20px;
+  margin-bottom: 30px;
+  height: auto;
+  margin-left: 500px;
+  background-color: rgb(255, 255, 255);
+}
+.wire{
+  margin-top: 100px;
+}
+
+/* Styles pour les appareils plus grands que 767px de large */
+@media (min-width: 768px) {
+  fieldset {
+    width: 40%;
+    margin: 0 auto;
+    /* Centre le formulaire horizontalement */
+    padding: 20px;
+    /* Ajoutez de l'espace intérieur pour une meilleure apparence */
+  }
+}
+
+/* Styles pour les appareils plus petits ou les mobiles */
+@media (max-width: 767px) {
+  fieldset {
+    width: 70%;
+    margin: 0 auto;
+    /* Centre le formulaire horizontalement */
+    padding: 20px;
+    /* Ajoutez de l'espace intérieur pour une meilleure apparence */
+
+  }
+}
+
+.espace{
+  margin-bottom: 20px;
+}
+/* Styles pour centrer l'image */
+.container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100px; 
+}
+/* .E_book{
+  color: #dbb434;
+  font-size: 26px;
+} */
+/* .E_book:hover{
+  cursor: pointer;
+text-decoration: underline;
+color: red;
+} */
+
+
+/* code pour rendre ma navbar static */
+.navbara {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; 
+}
+
+body {
+background-color: white;
+}
+/* Code pour positionner le footer en bas de la page avec une marge en haut */
+/* Code pour ajouter une marge en haut du footer */
+footer {
+  background-color: #1c2331;
+  padding: 130px;
+}
+
+
+/* pour notre alerte */
+.coorectif{
+  margin-bottom: 820px;
+}
+
+.custom-alert {
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 20px;
+  position: relative;
+  color: white;
+  background-color: green;
+  height: 90px;
+  font-weight: bold;
+}
+
+.custom-alert .btn-close {
+  position: absolute;
+  top: 0;
+  right: 5px;
+}
+
+
+
+
+
+
+
+/* color pour mon container des livre */
+
+
+.titre{
+  font-size: 22px;
+  color: rgb(195, 61, 20);
+}
+.flex{
+  display: flex;
+  /* justify-content: center; */
+}
+.flexi{
+  justify-content: center;
+}
+.soutitre{
+  font-size: 19px;
+  margin-top: 5px;
+}
+.des{
+  font-size: 16px;
+  font-weight: bold;
+}
+.emet:hover{
+  font-size: 17px;
+  color: #bf1515;
+}
+

@@ -1,0 +1,97 @@
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 20px; /* Ajustez cette valeur selon l'espacement souhaité entre les cadres */
+}
+
+
+.book {
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.book-image img {
+    width: 100%;
+    height: auto;
+}
+.book-image img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.book-details {
+    padding: 10px;
+}
+
+.cart-icon {
+    text-align: right;
+    color: rgb(227, 227, 45);
+}
+
+.cart-icon i {
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+
+}
+
+
+
+.cart-icon i:hover {
+    color: #0ff11e;
+    animation: clickEffect 0.3s ease-in-out forwards;
+}
+
+@keyframes clickEffect {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(0.9);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    75% {
+        transform: scale(1.0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Media Queries pour les appareils de petite taille */
+@media screen and (max-width: 768px) {
+    .book {
+        width: 100%; /* Un livre par colonne */
+        margin-bottom: 20px; /* Espace entre les livres */
+    }
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .book {
+        width: 100%; /* Un livre par ligne sur les écrans très petits */
+    }
+}
+
+legend{
+    background-color: rgb(41, 115, 28);
+    color: white;
+    border-radius: 5px;
+}
+
+.panier{
+    color: white;
+    font-size: 2px;
+}
